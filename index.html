@@ -4,34 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Special Birthday Surprise</title>
-
+    <title>Happy Birthday, Mama!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="floating-decorations" aria-hidden="true">
-        <span>♡</span>
         <span>🌸</span>
         <span>♡</span>
         <span>🌷</span>
         <span>♡</span>
         <span>🌸</span>
         <span>♡</span>
+        <span>🌷</span>
     </div>
 
-    <main class="birthday-container">
+    <!-- WELCOME AND BIRTHDAY LETTER -->
+    <main class="birthday-container" id="birthdayPage">
 
+        <!-- WELCOME SCREEN -->
         <section class="welcome-screen" id="welcomeScreen">
 
-            <div class="floating-hearts"></div>
+            <p class="subtitle">A special day for someone special</p>
 
-            <p class="subtitle">A little something for you</p>
-
-            <h1>Happy Birthday!</h1>
+            <h1>Happy Birthday, Mama! ♡</h1>
 
             <p class="description">
-                Someone special deserves something special.
+                A little surprise filled with love, gratitude,
+                and beautiful memories.
             </p>
 
             <button id="openLetter">
@@ -40,63 +40,326 @@
 
         </section>
 
+        <!-- LETTER SCREEN -->
         <section class="letter-screen hidden" id="letterScreen">
 
             <div class="letter">
-                <p class="letter-date">A special day, just for you</p>
 
-                <h2>To Cyrel(Monay) ♡</h2>
+                <p class="letter-date">A special day, just for you Mama</p>
+
+                <h2>To Our Dearest Mama ♡</h2>
 
                 <div class="photo-container">
-                    <div class=""polaroid>
+                    <div class="polaroid">
                         <img
-                            src="images/special-photo.jpg"
-                           alt="A special memory"
+                            src="images/mama-photo.jpg"
+                            alt="A beautiful memory with Mama"
                             class="birthday-photo"
                         >
-                        <p class="photo-caption">A little memory to treasure ♡</p>
+                        <p class="photo-caption">
+                            Our one and only pretty mama ♡
+                        </p>
                     </div>
                 </div>
 
-                <p>
-                    Happy 20th Birthday!
-                </p>
+                <!-- BIRTHDAY LETTER -->
+                <div class="letter-content">
 
-                <p>
-                    Today is all about celebrating you.
-                    I hope this little surprise brings a smile
-                    to your face and reminds you how special you are.
-                </p>
+                    <p>
+                        Happy Birthday to the most wonderful Mama!
+                    </p>
 
-                <p>
-                    Sana ay lumakas kana sa inoman at hindi na mabilis malasing.
-                    Nawa din ay lagi kang ngumiti.
-                </p>
+                    <p>
+                        On your special day, we want to remind you
+                        how much we love and appreciate you.
+                        Thank you for all the sacrifices you've made,
+                        for all the things you've done for us,
+                        and for loving us unconditionally.
+                        We may not always say it, but we are truly
+                        grateful to have you in our lives.
+                    </p>
 
-                <p>
-                    May your days be filled with happiness,
-                    beautiful memories, and countless reasons
-                    to smile.
-                </p>
+                    <p>
+                        Salamat sa lahat ng pagod, sakripisyo,
+                        at pagmamahal sa amin mama na walang hinihinging kapalit.
+                        We know that being a mother isn't always easy, tapos ida-dagdag pa ang tigas ng ulo ko😅😅,
+                        but you continue to give us love and strength
+                        in your own ways. We hope you know how much
+                        that means to us.
+                    </p>
 
-                <p>
-                    You deserve all the wonderful things
-                    life has to offer.
-                </p>
+                    <p>
+                        We wish you good health, genuine happiness,
+                        and safety every single day.
+                        Sana ay lagi kang gabayan at ilayo
+                        sa anumang kapahamakan.
+                        May you always find reasons to smile,
+                        peace in your heart, and happiness
+                        in the little things.
+                    </p>
 
-                <p class="signature">
-                    JACE & JEFF 😜😜
-                </p>
+                    <p>
+                        And whenever life gets difficult,
+                        we hope you never lose the courage
+                        to keep going.
+                        Laban lang, Ma.
+                        You are stronger than you think,
+                        and we hope life gives you more
+                        beautiful reasons to be happy.
+                    </p>
+
+                    <p>
+                        We love you so much, Mama!
+                        Happy Birthday! ♡
+                    </p>
+
+                </div>
+
+                <div class="floral-divider">
+                    ❀ ♡ ❀
+                </div>
+
+                <!-- FAMILY MEMORIES NAVIGATION -->
+                <div class="memory-section">
+
+                    <h2>More Beautiful Memories ♡</h2>
+
+                    <p>
+                        We have so many memories worth keeping.
+                        Here's a little collection of them.
+                    </p>
+
+                    <a href="#memories" class="memory-button" data-page="memories">
+                        View Our Family Memories ♡
+                    </a>
+
+                </div>
+
+                <div class="floral-divider">
+                    ❀ ♡ ❀
+                </div>
+
+                <!-- CLOSING MESSAGE -->
+                <div class="closing-message">
+
+                    <p>
+                        No words will ever be enough to express
+                        how much you mean to us.
+                    </p>
+
+                    <h2>We Love You, Mama! ♡</h2>
+
+                    <p class="signature">
+                        With all our love,
+                        <br>
+                        PAPA, JACE, JADE, JACOB❤️
+                    </p>
+
+                </div>
+
             </div>
 
         </section>
 
     </main>
 
+
+    <!-- FAMILY MEMORIES SECTION -->
+    <main class="memories-container hidden" id="memoriesPage">
+
+        <header class="memories-header">
+
+            <p class="subtitle">A collection of moments</p>
+
+            <h1>Our Family Memories ♡</h1>
+
+            <p>
+                Little moments, precious memories,
+                and a lifetime of love.
+            </p>
+
+        </header>
+
+        <!-- FAMILY PHOTO GALLERY -->
+        <section class="family-gallery">
+
+            <div class="gallery-row">
+
+                <div class="gallery-card">
+                    <img src="images/memory-01.jpg" alt="Family memory 1">
+                    <div class="gallery-caption">
+                        <h3>A Beautiful Beginning ♡</h3>
+                        <p>One of the many moments worth remembering.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/memory-02.jpg" alt="Family memory 2">
+                    <div class="gallery-caption">
+                        <h3>Haircut Time ♡</h3>
+                        <p>Pinilit mag pagupit ang bida.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/memory-03.jpg" alt="Family memory 3">
+                    <div class="gallery-caption">
+                        <h3>Precious Moments ♡</h3>
+                        <p>Little moments that mean so much.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="gallery-row">
+
+                <div class="gallery-card">
+                    <img src="images/memory-04.jpg" alt="Family memory 4">
+                    <div class="gallery-caption">
+                        <h3>Our Happy Place ♡</h3>
+                        <p>Wherever we are, as long as we're together.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/memory-05.jpg" alt="Family memory 5">
+                    <div class="gallery-caption">
+                        <h3>Beautiful Smiles ♡</h3>
+                        <p>Memories that always bring happiness.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/memory-06.jpg" alt="Family memory 6">
+                    <div class="gallery-caption">
+                        <h3>Family Time ♡</h3>
+                        <p>Every moment spent together is special.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="gallery-row">
+
+                <div class="gallery-card">
+                    <img src="images/memory-07.jpg" alt="Family memory 7">
+                    <div class="gallery-caption">
+                        <h3>Moments of Love ♡</h3>
+                        <p>Simple memories, endless happiness, and full of love.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/memory-08.jpg" alt="Family memory 8">
+                    <div class="gallery-caption">
+                        <h3>Moments of Joy ♡</h3>
+                        <p>A moment we'll always treasure.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/memory-09.jpg" alt="Family memory 9">
+                    <div class="gallery-caption">
+                        <h3>Our Little Celebration ♡</h3>
+                        <p>Every journey becomes a beautiful story.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="gallery-row">
+
+                <div class="gallery-card">
+                    <img src="images/memory-10.jpg" alt="Family memory 10">
+                    <div class="gallery-caption">
+                        <h3>Love and Laughter ♡</h3>
+                        <p>The best memories are made with family.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/memory-11.jpg" alt="Family memory 11">
+                    <div class="gallery-caption">
+                        <h3>Always Together ♡</h3>
+                        <p>Through every season of life.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/memory-12.jpg" alt="Family memory 12">
+                    <div class="gallery-caption">
+                        <h3>Special Occasions ♡</h3>
+                        <p>Celebrating life's beautiful moments.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="gallery-row">
+
+                <div class="gallery-card">
+                    <img src="images/memory-13.jpg" alt="Family memory 13">
+                    <div class="gallery-caption">
+                        <h3>Sweet Memories ♡</h3>
+                        <p>Moments we'll carry in our hearts.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/memory-14.jpg" alt="Family memory 14">
+                    <div class="gallery-caption">
+                        <h3>Our Greatest Blessing ♡</h3>
+                        <p>Grateful for every strand of hair ni sheng.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="images/memory-15.jpg" alt="Family memory 15">
+                    <div class="gallery-caption">
+                        <h3>Unforgettable Days ♡</h3>
+                        <p>Memories that time can never erase, Yieeee kasal na sila.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="gallery-row">
+
+                <div class="gallery-card">
+                    <img src="images/memory-16.jpg" alt="Family memory 16">
+                    <div class="gallery-caption">
+                        <h3>Our Forever Family ♡</h3>
+                        <p>And many more memories yet to come.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- MEMORIES FOOTER -->
+        <footer class="memories-footer">
+
+            <p>
+                Every picture tells a story,
+                and every story reminds us of you.
+            </p>
+
+            <h2>We Love You, Mama! ♡</h2>
+
+            <a href="#letter" class="memory-button" data-page="letter">
+                ← Back to Birthday Letter
+            </a>
+
+        </footer>
+
+    </main>
+
+
+    <!-- ONE MUSIC PLAYER FOR THE ENTIRE WEBSITE -->
     <audio id="backgroundMusic" loop>
         <source src="assets/birthday-music.mp3" type="audio/mpeg">
     </audio>
-
 
     <script src="script.js"></script>
 
